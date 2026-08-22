@@ -97,23 +97,23 @@ function Index() {
             <div className="relative flex items-center justify-center">
               <h1 className="text-chrome flex items-center justify-center font-display text-[19vw] font-black leading-[0.82] tracking-[-0.03em] md:text-[12rem]">
                 <span>Portf</span>
-                <span className="relative inline-flex aspect-square w-[0.74em] items-center justify-center">
-                  <img
-                    src={heroOrb}
-                    alt="Hands cradling a glowing sphere of light"
-                    width={1408}
-                    height={1408}
-                    className="absolute left-1/2 top-1/2 w-[2.15em] max-w-none -translate-x-1/2 -translate-y-[36%] select-none mix-blend-screen brightness-[1.35] contrast-[1.2]"
-                  />
-                </span>
-
+                <span aria-hidden className="inline-block w-[0.74em]" />
                 <span>lio</span>
               </h1>
+
+              <img
+                src={heroOrb}
+                alt="Hands cradling a glowing sphere of light"
+                width={1408}
+                height={1408}
+                className="pointer-events-none absolute left-[53.5%] top-1/2 w-[40vw] max-w-none -translate-x-1/2 -translate-y-[34%] select-none mix-blend-screen brightness-[1.3] contrast-[1.2] md:w-[26rem]"
+              />
 
               <p className="text-lime-glow pointer-events-none absolute bottom-0 right-[2%] translate-y-[45%] -rotate-3 font-script text-4xl md:text-7xl">
                 Samshir Ali
               </p>
             </div>
+
           </div>
 
 
