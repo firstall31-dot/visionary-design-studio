@@ -98,7 +98,7 @@ function Index() {
                       WebkitMaskImage:
                         "radial-gradient(circle at 50% 50%, #000 52%, transparent 72%)",
                     }}
-                    className="relative w-[1.35em] max-w-none select-none mix-blend-screen"
+                    className="relative w-[1.35em] max-w-none select-none mix-blend-screen brightness-110 contrast-[1.6]"
 
                   />
                 </span>
