@@ -75,42 +75,47 @@ function Index() {
       {/* Hero — artboard composition from the reference cover */}
       <section className="relative flex min-h-screen items-center justify-center overflow-hidden px-6 pt-24">
         <div className="relative z-10 w-full max-w-6xl">
-          <div className="relative px-6 py-10 md:px-16 md:py-16">
+          <div className="relative px-6 py-10 md:px-16 md:py-20">
             <div className="selection-frame" />
+            {[
+              ["0%", "0%"],
+              ["50%", "0%"],
+              ["100%", "0%"],
+              ["0%", "50%"],
+              ["100%", "50%"],
+              ["0%", "100%"],
+              ["50%", "100%"],
+              ["100%", "100%"],
+            ].map(([left, top]) => (
+              <span key={`${left}-${top}`} aria-hidden className="sel-handle" style={{ left, top }} />
+            ))}
 
-            <p className="mb-2 text-center font-display text-lg font-bold tracking-tight md:mb-1 md:text-3xl">
+            <p className="mb-1 pl-[2%] text-left font-display text-lg font-bold tracking-tight md:text-3xl">
               Graphic <span className="text-muted-foreground">Design</span>
             </p>
 
             <div className="relative flex items-center justify-center">
-              <h1 className="text-chrome flex items-center justify-center font-display text-[18vw] font-black leading-[0.8] tracking-tight md:text-[11rem]">
+              <h1 className="text-chrome flex items-center justify-center font-display text-[19vw] font-black leading-[0.82] tracking-[-0.03em] md:text-[12rem]">
                 <span>Portf</span>
-                <span className="relative inline-flex aspect-square w-[0.88em] items-center justify-center">
-                  <span className="glow absolute h-[0.56em] w-[0.56em] rounded-full bg-foreground" />
+                <span className="relative inline-flex aspect-square w-[0.74em] items-center justify-center">
                   <img
                     src={heroOrb}
                     alt="Hands cradling a glowing sphere of light"
                     width={1408}
                     height={1408}
-                    style={{
-                      maskImage:
-                        "radial-gradient(circle at 50% 47%, #000 34%, transparent 55%)",
-                      WebkitMaskImage:
-                        "radial-gradient(circle at 50% 47%, #000 34%, transparent 55%)",
-                    }}
-                    className="absolute left-1/2 top-1/2 w-[1.7em] max-w-none -translate-x-1/2 -translate-y-[47%] select-none mix-blend-screen contrast-[1.4]"
+                    className="absolute left-1/2 top-1/2 w-[1.95em] max-w-none -translate-x-1/2 -translate-y-[38%] select-none mix-blend-screen brightness-110 contrast-[1.35]"
                   />
                 </span>
-
 
                 <span>lio</span>
               </h1>
 
-              <p className="text-lime-glow pointer-events-none absolute bottom-[-0.1em] right-0 translate-y-1/3 font-script text-4xl md:right-4 md:text-7xl">
+              <p className="text-lime-glow pointer-events-none absolute bottom-0 right-[2%] translate-y-[45%] -rotate-3 font-script text-4xl md:text-7xl">
                 Samshir Ali
               </p>
             </div>
           </div>
+
 
           <p className="mx-auto mt-16 max-w-md text-center text-sm leading-relaxed text-muted-foreground">
             Independent graphic designer working in identity, print and campaign
