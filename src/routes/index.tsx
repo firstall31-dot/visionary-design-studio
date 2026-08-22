@@ -103,7 +103,7 @@ function Index() {
                     alt="Hands cradling a glowing sphere of light"
                     width={1408}
                     height={1408}
-                    className="absolute left-1/2 top-1/2 w-[1.95em] max-w-none -translate-x-1/2 -translate-y-[38%] select-none mix-blend-screen brightness-110 contrast-[1.35]"
+                    className="absolute left-1/2 top-1/2 w-[2.15em] max-w-none -translate-x-1/2 -translate-y-[36%] select-none mix-blend-screen brightness-[1.35] contrast-[1.2]"
                   />
                 </span>
 
