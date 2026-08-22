@@ -69,24 +69,39 @@ function Index() {
         </nav>
       </header>
 
-      {/* Hero */}
+      {/* Hero — artboard composition from the reference cover */}
       <section className="relative flex min-h-screen items-center justify-center overflow-hidden px-6 pt-24">
-        <img
-          src={heroOrb}
-          alt="Hands cradling a glowing sphere of light"
-          width={1408}
-          height={1408}
-          className="pointer-events-none absolute left-1/2 top-1/2 w-[min(70vw,520px)] -translate-x-1/2 -translate-y-[55%] select-none opacity-90"
-        />
-        <div className="relative z-10 mx-auto max-w-5xl text-center">
-          <p className="mb-4 text-sm font-medium uppercase tracking-[0.5em] text-muted-foreground md:text-base">
-            Graphic <span className="text-foreground/60">Design</span>
-          </p>
-          <h1 className="text-chrome font-display text-[19vw] font-extrabold leading-[0.82] tracking-tight md:text-[13rem]">
-            Portfolio
-          </h1>
-          <p className="mt-1 font-script text-4xl text-primary md:-mt-4 md:text-6xl md:translate-x-32">Samshir Ali</p>
-          <p className="mx-auto mt-10 max-w-md text-sm leading-relaxed text-muted-foreground">
+        <div className="relative z-10 w-full max-w-6xl">
+          <div className="relative px-6 py-10 md:px-16 md:py-16">
+            <div className="selection-frame" />
+
+            <p className="mb-2 text-center font-display text-lg font-bold tracking-tight md:mb-1 md:text-3xl">
+              Graphic <span className="text-muted-foreground">Design</span>
+            </p>
+
+            <div className="relative flex items-center justify-center">
+              <h1 className="text-chrome flex items-center justify-center font-display text-[18vw] font-black leading-[0.8] tracking-tight md:text-[11rem]">
+                <span>Portf</span>
+                <span className="relative inline-flex aspect-square w-[0.86em] items-center justify-center">
+                  <span className="absolute h-[0.5em] w-[0.5em] rounded-full bg-foreground glow" />
+                  <img
+                    src={heroOrb}
+                    alt="Hands cradling a glowing sphere of light"
+                    width={1408}
+                    height={1408}
+                    className="relative w-full select-none mix-blend-screen"
+                  />
+                </span>
+                <span>lio</span>
+              </h1>
+
+              <p className="text-lime-glow pointer-events-none absolute bottom-[-0.1em] right-0 translate-y-1/3 font-script text-4xl md:right-4 md:text-7xl">
+                Samshir Ali
+              </p>
+            </div>
+          </div>
+
+          <p className="mx-auto mt-16 max-w-md text-center text-sm leading-relaxed text-muted-foreground">
             Independent graphic designer working in identity, print and campaign
             art direction. Selected work from 2024–2025.
           </p>
@@ -94,6 +109,7 @@ function Index() {
         <Grain />
         <div className="pointer-events-none absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-background to-transparent" />
       </section>
+
 
       {/* Marquee */}
       <div className="relative overflow-hidden border-y border-border py-5">
