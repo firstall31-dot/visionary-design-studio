@@ -85,18 +85,23 @@ function Index() {
             <div className="relative flex items-center justify-center">
               <h1 className="text-chrome flex items-center justify-center font-display text-[18vw] font-black leading-[0.8] tracking-tight md:text-[11rem]">
                 <span>Portf</span>
-                <span className="relative inline-flex aspect-square w-[0.9em] items-center justify-center">
-                  <span className="glow absolute h-[0.5em] w-[0.5em] rounded-full bg-foreground" />
-                  <span className="relative aspect-square w-[0.78em] overflow-hidden rounded-full">
-                    <img
-                      src={heroOrb}
-                      alt="Hands cradling a glowing sphere of light"
-                      width={1408}
-                      height={1408}
-                      className="w-[1.05em] max-w-none -translate-x-[0.13em] -translate-y-[0.1em] select-none mix-blend-screen brightness-110 contrast-[1.5]"
-                    />
-                  </span>
+                <span className="relative inline-flex aspect-square w-[0.88em] items-center justify-center">
+                  <span className="glow absolute h-[0.56em] w-[0.56em] rounded-full bg-foreground" />
+                  <img
+                    src={heroOrb}
+                    alt="Hands cradling a glowing sphere of light"
+                    width={1408}
+                    height={1408}
+                    style={{
+                      maskImage:
+                        "radial-gradient(circle at 50% 47%, #000 34%, transparent 55%)",
+                      WebkitMaskImage:
+                        "radial-gradient(circle at 50% 47%, #000 34%, transparent 55%)",
+                    }}
+                    className="absolute left-1/2 top-1/2 w-[1.7em] max-w-none -translate-x-1/2 -translate-y-[47%] select-none mix-blend-screen contrast-[1.4]"
+                  />
                 </span>
+
 
                 <span>lio</span>
               </h1>
