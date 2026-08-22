@@ -86,22 +86,18 @@ function Index() {
               <h1 className="text-chrome flex items-center justify-center font-display text-[18vw] font-black leading-[0.8] tracking-tight md:text-[11rem]">
                 <span>Portf</span>
                 <span className="relative inline-flex aspect-square w-[0.9em] items-center justify-center">
-                  <span className="absolute h-[0.46em] w-[0.46em] rounded-full bg-foreground glow" />
-                  <img
-                    src={heroOrb}
-                    alt="Hands cradling a glowing sphere of light"
-                    width={1408}
-                    height={1408}
-                    style={{
-                      maskImage:
-                        "radial-gradient(circle at 50% 50%, #000 52%, transparent 72%)",
-                      WebkitMaskImage:
-                        "radial-gradient(circle at 50% 50%, #000 52%, transparent 72%)",
-                    }}
-                    className="relative w-[1.35em] max-w-none select-none mix-blend-screen brightness-110 contrast-[1.6]"
-
-                  />
+                  <span className="glow absolute h-[0.5em] w-[0.5em] rounded-full bg-foreground" />
+                  <span className="relative aspect-square w-[0.78em] overflow-hidden rounded-full">
+                    <img
+                      src={heroOrb}
+                      alt="Hands cradling a glowing sphere of light"
+                      width={1408}
+                      height={1408}
+                      className="w-[1.9em] max-w-none -translate-x-[0.56em] -translate-y-[0.5em] select-none mix-blend-screen brightness-110 contrast-[1.5]"
+                    />
+                  </span>
                 </span>
+
                 <span>lio</span>
               </h1>
 
