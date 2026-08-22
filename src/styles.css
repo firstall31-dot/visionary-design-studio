@@ -74,16 +74,18 @@
     oklch(0.78 0.19 128) 100%
   );
   --spotlight: radial-gradient(
-    120% 80% at 50% 22%,
-    oklch(0.3 0 0 / 85%) 0%,
-    oklch(0.16 0 0 / 60%) 35%,
-    oklch(0.09 0 0 / 0%) 70%
+    90% 65% at 50% 30%,
+    oklch(0.42 0 0 / 95%) 0%,
+    oklch(0.26 0 0 / 70%) 30%,
+    oklch(0.13 0 0 / 35%) 55%,
+    oklch(0.08 0 0 / 0%) 78%
   );
   --vignette: radial-gradient(
-    130% 100% at 50% 45%,
-    transparent 40%,
-    oklch(0 0 0 / 70%) 100%
+    120% 95% at 50% 38%,
+    transparent 32%,
+    oklch(0 0 0 / 85%) 100%
   );
+
   --shadow-glow: 0 0 120px 20px oklch(1 0 0 / 12%);
   --shadow-lime: 0 0 40px oklch(0.9 0.2 128 / 35%);
   --transition-smooth: 400ms cubic-bezier(0.22, 1, 0.36, 1);
@@ -173,11 +175,12 @@
   inset: -50%;
   z-index: 1;
   pointer-events: none;
-  opacity: 0.16;
-  mix-blend-mode: overlay;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity: 0.42;
+  mix-blend-mode: soft-light;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E");
   animation: grain-shift 700ms steps(3) infinite;
 }
+
 
 @keyframes grain-shift {
   0% { transform: translate(0, 0); }
@@ -186,24 +189,21 @@
   100% { transform: translate(0, 0); }
 }
 
-/* Photoshop-style dashed selection frame from the reference artboard */
 @utility selection-frame {
   position: absolute;
   inset: 0;
   pointer-events: none;
-  border: 1px dashed oklch(1 0 0 / 45%);
-
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    width: 7px;
-    height: 7px;
-    background: oklch(1 0 0);
-  }
-  &::before { top: -4px; left: -4px; }
-  &::after { bottom: -4px; right: -4px; }
+  border: 1px dashed oklch(1 0 0 / 70%);
 }
+
+@utility sel-handle {
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  background: oklch(1 0 0);
+  transform: translate(-50%, -50%);
+}
+
 
 @utility glow {
   box-shadow: var(--shadow-glow);
