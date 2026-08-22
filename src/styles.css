@@ -74,16 +74,18 @@
     oklch(0.78 0.19 128) 100%
   );
   --spotlight: radial-gradient(
-    120% 80% at 50% 22%,
-    oklch(0.3 0 0 / 85%) 0%,
-    oklch(0.16 0 0 / 60%) 35%,
-    oklch(0.09 0 0 / 0%) 70%
+    90% 65% at 50% 30%,
+    oklch(0.42 0 0 / 95%) 0%,
+    oklch(0.26 0 0 / 70%) 30%,
+    oklch(0.13 0 0 / 35%) 55%,
+    oklch(0.08 0 0 / 0%) 78%
   );
   --vignette: radial-gradient(
-    130% 100% at 50% 45%,
-    transparent 40%,
-    oklch(0 0 0 / 70%) 100%
+    120% 95% at 50% 38%,
+    transparent 32%,
+    oklch(0 0 0 / 85%) 100%
   );
+
   --shadow-glow: 0 0 120px 20px oklch(1 0 0 / 12%);
   --shadow-lime: 0 0 40px oklch(0.9 0.2 128 / 35%);
   --transition-smooth: 400ms cubic-bezier(0.22, 1, 0.36, 1);
